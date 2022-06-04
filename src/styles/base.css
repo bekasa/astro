@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+
+article{@apply text-lg text-gray-800 leading-normal}
+article h2{@apply leading-tight text-2xl font-bold text-gray-700 mb-2 mt-10}
+article h3{@apply leading-tight text-xl font-bold text-gray-700 mb-2 mt-6}
+article p{@apply p-3}
+article .icon{@apply w-8 h-8 inline-block}
+article a{@apply text-indigo-700}
+article a:hover{@apply text-indigo-400 bg-gray-400}
+article ul{@apply ml-4}
+article li{@apply ml-4 p-1}
+
+dt{@apply leading-tight text-xl font-bold text-gray-700 mb-2 mt-6}
+
+.topgradient {
+  background: linear-gradient(90deg, #2b2c2c 0%, #8b8b8a 100%);
+}
+
+.headings{max-height:300px}
+.cutout{width:200px;float:left;margin:10px;shape-outside:circle(40% at center center)}
+
+/*#sub-menu{box-shadow:0px 10px 11px 3px rgba(166, 178, 176, 0.85);}*/
+#dropsub-menu:after {
+  transform: translateY(0.5rem);
+  margin-left: 0.25rem;
+  content:"";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8.7px 5px 0 5px;
+  border-color: #2b6cb0 transparent transparent transparent;
+  }
+
+  #menu-toggle:checked + #menu{display:block}
+  
+
+  .blog_grid{
+  display:grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr) );
+}
+
+
+.blog_item{
+  position:relative;
+  display:grid;
+  grid-row: span 4;
+  grid-template-rows:subgrid;
+  grid-row-gap: 0.2rem;  
+}
+
+code{background-color: #e5e7eb}
+@tailwind utilities;
+input,textarea{border:1px solid #a0aec0;}
+.bg{background:#f1f1f1}
