@@ -18,3 +18,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+#git config --global credential.helper 'store --file ~/.my-credentials' for setting github personal access tokens

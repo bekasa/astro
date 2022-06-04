@@ -1,0 +1,60 @@
+---
+const d = new Date();
+let year = d.getFullYear();
+---
+
+<footer class="bg-gray-600 text-white">
+    <div class="container mx-auto px-8">
+      <div class="w-full flex flex-col md:flex-row py-6">
+        <div class="flex-1 mb-6 text-white">
+          <a class=" no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <svg
+      class="icon icon-mlogo inline"
+      aria-labelledby="logo"
+      role="img"
+      width="35"
+      height="38"
+    >
+      <title id="logo">logo</title>
+      <use xlink:href="/symbol-defs.svg#icon-mlogo"></use>
+    </svg>
+          </a>
+<span class="text-pink-600">Meteor</span>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase md:mb-6">Help</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="/faq" class="no-underline hover:underline hover:text-pink-500">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase md:mb-6">Legal</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline hover:text-pink-500">Terms</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="/privacy-policy" class="no-underline hover:underline hover:text-pink-500">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase md:mb-6">Links</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="/blog" class="no-underline hover:underline hover:text-pink-500">Blog</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="/contact" class="no-underline hover:underline hover:text-pink-500">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="p-4 mx-auto text-center">
+    <span><a href="https://meteorwebsitedesign.com/">meteorwebsitedesign.com</a>
+    &copy; 2012 - {year} All Rights Reserved</span>
+  </p>
+  </footer>

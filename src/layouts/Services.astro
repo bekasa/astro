@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Headings from '../components/Headings.astro'
+const {content} = Astro.props;
+---
+<Layout title={content.pageTitle} description={content.description}>
+    <Headings pa_s_jpg={content.pa_s_jpg}
+     pa_jpg={content.pa_jpg}
+     panel_title={content.panel_title}
+     page_title={content.page_title}
+     panel_summary={content.panel_summary}
+     
+     >
+    </Headings>
+    <div class="lg:w-2/3 mx-auto p-4">   
+        <article>
+          <h2>{content.article_title }</h2>
+          <slot />
+        </article>
+    
+    </div>
+    
+
+</Layout>

@@ -1,0 +1,46 @@
+---
+
+const {panel_title, page_title, panel_summary, pa_s_jpg, pa_jpg}  = Astro.props;
+
+---
+
+<div class="w-full max-h-full overflow-hidden relative h-72 gradient">
+    <div class="w-full absolute top-0 left-0 opacity-75">
+        <h1 class="text-center lg:text-2xl bg-gray-800 text-white">{panel_title}</h1>
+    </div>
+    <div class="flex">
+        <div class="w-full md:w-1/2 mt-8 text-white flex flex-col justify-center px-2" >
+          <div>
+            <div class="cutout">
+              <svg
+                class="icon icon-mlogo"        
+                role="img"
+                width="200"
+                height="200"
+              >        
+                <use xlink:href="/symbol-defs.svg#icon-mlogo"></use>
+              </svg>
+            </div>
+            <h2 class="lg:text-2xl">{page_title}</h2>
+            <p class="md:text-lg lg:text-2xl">{panel_summary}</p>   
+          </div>       
+        </div>
+        <div class="w-0 md:w-1/2 text-white h-72" >
+          <picture>
+            <source
+            media="(min-width:769px)"
+            srcset={pa_s_jpg}
+            type="image/webp"
+            />
+            <img
+              class="object-cover w-full"
+              src={pa_jpg}
+              alt="web design"
+              height="300"
+              
+            />
+          </picture>
+        </div>
+    </div>
+  </div>
+  
