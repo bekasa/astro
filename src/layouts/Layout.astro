@@ -3,6 +3,7 @@ export interface Props {
 	title: string;
 	description: string
 }
+import "../styles/base.css";
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 const {title, description } = Astro.props as Props;
