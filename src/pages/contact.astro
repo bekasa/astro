@@ -1,0 +1,56 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Headings from '../components/Headings.astro'
+pageTitle: "Web Design and Development Services- Costa del Sol"
+url: '/contact'
+page_title: "Contact"
+description: "Website Design and Development Services, effective web design, hosting, development and web application services in the Costa del Sol area."
+panel_title: "Contact Form"
+panel_summary: "Request details about any service"
+breadcrumb: "Contact"
+pa_jpg: "https://res.cloudinary.com/bekasa/image/upload/v1547655672/contact_x0vosq.jpg"
+pa_s_jpg: "https://res.cloudinary.com/bekasa/image/upload/v1547655672/contact_s_zsxoti.jpg"
+panel_image: "https://res.cloudinary.com/bekasa/image/upload/v1547243048/contact_h1vtmh.webp"
+panel_image_s: "https://res.cloudinary.com/bekasa/image/upload/v1547243037/contact_s_onxwxp.webp"
+permalink: "/contact/"
+---
+<Layout title='' description="">
+	<Headings pa_s_jpg="https://res.cloudinary.com/bekasa/image/upload/v1547655672/contact_s_zsxoti.jpg"
+	pa_jpg="https://res.cloudinary.com/bekasa/image/upload/v1547655672/contact_x0vosq.jpg"
+	panel_title="Contact Form"
+     page_title="Contact"
+     panel_summary="Request details about any service"
+	>
+	</Headings>
+	<div class="lg:w-2/3 mx-auto p-4">   
+		<article>
+		<p>
+		Contact: Robert
+		<br />
+		Mobile: +34 637 51 75 51
+		</p>
+	<h2>Contact Form</h2>
+	
+<form action="/thankyou" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<div class="invisible"><input name="bot-field" /></div>
+	<div class="m-2 p-4">
+	<div><label for="name">Name<span class="text-red-700">*</span></label></div>
+	<input type="text" name="name" id="name" required minlength="4" maxlength="100">
+	</div>
+	<div class="m-2 p-4">
+	<div><label for="email">Email<span class="text-red-700">*</span></label></div>
+	<input type="email" name="email" id="email" required >
+	</div>
+	<div class="m-2 p-4">
+	<div><label for="message">Message<span class="text-red-700">*</span></label></div>
+	<textarea name="message" cols="30" rows="6" minlength="4" required></textarea>
+	</div>
+	<div>
+	<button class="rounded bg-blue-700 px-4 py-2 m-2 text-white"type="submit">Send</button>
+	</div>
+</form>
+</article>
+  
+</div>
+</Layout>

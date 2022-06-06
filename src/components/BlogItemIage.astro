@@ -1,0 +1,32 @@
+---
+const {post} =Astro.props;
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const days = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th', '10th', '11th', '12th', '13th', '14th', '15th',
+'16th', '17th', '18th', '19th', '20th', '21st', '22nd', '23rd', '24th', '25th', '26th', '27th', '28th', '29th', '30th',
+'31st'];
+let readDate = new Date(post.frontmatter.date);
+let year = readDate.getFullYear().toString();
+let month = months[readDate.getMonth()];
+let day = days[readDate.getDate()-1];
+let date = day+', '+month+' '+year;
+---
+<div class="blog_item rounded overflow-hidden shadow-lg bg-gray-200 text-gray-700">       
+    <div class="mx-auto">
+      <a href={post.frontmatter.url}>
+        <img loading="lazy" src={post.frontmatter.blog_image} alt={post.frontmatter.article_title} />
+      </a>
+    </div>
+
+    <div class="text-sm px-6">
+      <time datetime={post.frontmatter.date}>{date}</time>
+    </div> 
+
+    <div class="font-bold text-xl mb-2 px-6">
+      <a href={post.frontmatter.url }>{post.frontmatter.article_title }</a>
+    </div> 
+
+    <div class="py-4">
+      <p class="text-grey-darker text-base px-6">{post.frontmatter.description}
+      </p>
+    </div>
+  </div>

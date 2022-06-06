@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Headings from '../components/Headings.astro'
+const {content} = Astro.props;
+
+const allposts = await Astro.glob('../pages/blog/*.md');
+let date = new Date();
+const posts = allposts.filter(post => new Date(post.frontmatter.date) < date )
+posts.sort(function(a, b){
+  return new Date(a.frontmatter.date) - new Date(b.frontmatter.date)
+});
+posts.reverse();//works from blog->index.astro
+let len = posts.length-1;
+let pointers = '';
+
+for(let i=0; i <= len; i++ ){
+  
+if(i == 0 && content.url == posts[i].url){
+  
+  pointers=`<div>&nbsp;</div><div><a href=${posts[i+1].url}>Next <svg class='fill-current text-gray-700 inline-block' width='28' height='28' viewBox='0 0 20 20'><use xlink:href='/symbol-defs.svg#icon-arrow-right'></svg></a></div>`
+  } 
+   
+else if(i == len && content.url == posts[i].url){
+
+  pointers = `<div><a href=${posts[i-1].url}><svg class="fill-current text-gray-700 inline-block" width="28" height="28" viewBox="0 0 20 20"><use xlink:href="/symbol-defs.svg#icon-arrow-left"></svg> Previous</a></div><div>&nbsp;</div>`
+  }
+else if(i != 0 && i != len+1 && content.url == posts[i].url){
+  /*{% elif page.url == blog.url and loop.index0 != 0 and loop.index != len+1 %}*/
+  pointers = `<div><a href=${posts[i-1].url}><svg class="fill-current text-gray-700 inline-block" width="28" height="28" viewBox="0 0 20 20"><use xlink:href="/symbol-defs.svg#icon-arrow-left"></svg> Previous</a></div><div><a href=${posts[i+1].url}>Next <svg class="fill-current text-gray-700 inline-block" width="28" height="28" viewBox="0 0 20 20"><use xlink:href="/symbol-defs.svg#icon-arrow-right"></svg></a></div>`
+  }
+}
+---
+<Layout title={content.pageTitle} description={content.description}>
+    <Headings pa_s_jpg={content.pa_s_jpg}
+     pa_jpg={content.pa_jpg}
+     panel_title={content.panel_title}
+     page_title={content.page_title}
+     panel_summary={content.panel_summary}
+     
+     >
+    </Headings>
+    <div class="lg:w-2/3 mx-auto p-4">  
+        <article>         
+          <h2>{content.article_title }</h2>
+          <slot />
+        </article>        
+          <div class="p-4 flex justify-between" set:html={pointers} />        
+    </div>
+    
+
+</Layout>

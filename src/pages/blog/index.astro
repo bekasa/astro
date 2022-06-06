@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Headings from '../../components/Headings.astro'
+import BlogItemIage from '../../components/BlogItemIage.astro';
+const {content} = Astro.props;
+pageTitle: 'Articles Related to Website Design and Development - meteorwebsitedesign.com'
+description: 'Web development related articles written in plain English avoiding jargon\
+ wherever possible'
+panel_title: "Blog - Web Development"
+panel_summary: "Blog, interesting and current web development subjects in simple clear non-technical jargon free language"
+breadcrumb: "Blog"
+pa_jpg: "https://res.cloudinary.com/bekasa/image/upload/v1577478638/library_new_s_j1l2cv.jpg"
+pa_s_jpg: "https://res.cloudinary.com/bekasa/image/upload/v1577478638/library_new_s_ifzax8.webp"
+panel_image: "https://res.cloudinary.com/bekasa/image/upload/v1547288890/library_le8e6a.webp"
+panel_image_s: "https://res.cloudinary.com/bekasa/image/upload/v1547289109/library_s_bsjfuj.webp"
+const allposts = await Astro.glob('./*.md');
+let date = new Date();
+const posts = allposts.filter(post => new Date(post.frontmatter.date) < date )
+posts.sort(function(a, b){
+  return new Date(a.frontmatter.date) - new Date(b.frontmatter.date)
+});
+posts.reverse();//works
+---
+<Layout title="Articles Related to Website Design and Development"
+description="Web development related articles written in plain English avoiding jargon\
+wherever possible"
+>
+<Headings pa_s_jpg="https://res.cloudinary.com/bekasa/image/upload/v1577478638/library_new_s_ifzax8.webp"
+pa_jpg="https://res.cloudinary.com/bekasa/image/upload/v1577478638/library_new_s_j1l2cv.jpg"
+panel_title="Blog - Web Development"
+
+panel_summary="Blog, interesting and current web development subjects in simple clear non-technical jargon free language">
+</Headings>
+<div class="lg:w-5/6 mx-auto"> 
+    <div class="blog_grid py-6">  
+      {posts.map((post) => (
+        <BlogItemIage post={post}
+        ></BlogItemIage>
+      ))}
+  </div> 
+</div>
+</Layout>
