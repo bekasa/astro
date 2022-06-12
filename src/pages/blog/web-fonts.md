@@ -7,14 +7,18 @@ article_title: "Web fonts"
 description: "Web Typography: choices of web font and browser default fonts "
 categories: "general"
 lead: "Typography: WEb Fonts"
+pa_jpg: "https://res.cloudinary.com/bekasa/image/upload/v1654876739/webfonts_640_300_awyhag.webp"
+pa_s_jpg: ""
+panel_summary: "Panel summary"
 panel_image: "https://res.cloudinary.com/bekasa/image/upload/v1576366519/webfonts_lll4jx.webp"
 panel_image_s: "https://res.cloudinary.com/bekasa/image/upload/v1576366656/webfonts_s_sffmw7.webp"
 blog_image: "https://res.cloudinary.com/bekasa/image/upload/v1576677187/webfonts_s-comp_glub2h.png"
 panel_title: "Web Fonts"
 breadcrumb: "web fonts"
-date:   "2020-02-10T11:00:00" 
+date:   "2023-12-10T11:00:00"
+draft: true 
 ---
-## Web fonts
+
 Interest in web fonts is under going a revival at the moment with the advent of *variable* fonts.
 
 

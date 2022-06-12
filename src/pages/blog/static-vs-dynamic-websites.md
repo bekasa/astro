@@ -12,7 +12,7 @@ pa_s_jpg: "https://res.cloudinary.com/bekasa/image/upload/v1579799977/static_s_v
 panel_image: "https://res.cloudinary.com/bekasa/image/upload/v1547294743/static_jrqcyi.webp"
 panel_image_s: "https://res.cloudinary.com/bekasa/image/upload/v1547294743/static_s_apz1ms.webp"
 panel_title: "Static vs Dynamic Websites"
-panel_summary: "here"
+panel_summary: "Taking advantage of better security, flexibility and speed and cheaper delivery costs as static pages can be hosted on even the most basic web server"
 blog_image: "https://res.cloudinary.com/bekasa/image/upload/v1477933245/static-dynamic-min_lat0hd.png"
 breadcrumb: "Static vs Dynamic"
 date: "2016-10-06T11:00:00"
