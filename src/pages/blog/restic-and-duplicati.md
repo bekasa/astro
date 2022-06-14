@@ -17,7 +17,7 @@ panel_title: "Restic & Duplicati"
 date:   "2022-06-10T11:00:00" 
 ---
 
-Two well known programs for backing up and restoring files. Both work with the command line, multiple operating systems including Windows, Linux and Mac. The big differnce between them is that Duplicati has a web interface which can be viewed using a browser at port 8200. So for those not comfortable with the command line (terminal) then Duplicati is a good alternative.
+Two well known open source programs for backing up and restoring files. Both work with the command line, multiple operating systems including Windows, Linux and Mac. The big differnce between them is that Duplicati has a web interface which can be viewed using a browser at port 8200. So, for those not comfortable with the command line (terminal) then Duplicati is a good alternative. Both provide for incremental and encrypted backups.
 
 ### Installation
 
@@ -46,11 +46,11 @@ Restic is a mature, robust and well tested backup software solution. Simple to u
 As mentioned above restic commands are used in a terminal which are easy enough even if you would prefer to use a GUI.
 Restic is capable of backing up files both to connected and remote drives. The first step is to initialise a repository at the desired location. Available storage locations include local, SFTP, REST servers as well as numerous commercial providers including Google Cloud Storage, Amazon S3, Blackblaze B2, Microsoft Azure and many more.
 
-Local storage example to drive E on Windows <code>init repo E:/path to repo/restic_backup</code>
+Local storage example to drive E on Windows creating a repository <code>init repo E:/path to repo/restic_backup</code>
 
-It is required to enter a password a warning is given not to lose or forget , otherwise files stored in the repository will be irretrievable.
+It is required to enter a password, a warning is given not to lose or forget , otherwise files stored in the repository will be irretrievable.
 
-Backing up <code>restic -r  E:/path to repo/restic_backup --verbose backup ~/Documents</code>
+Backing up Docuents folder the repository <code>restic -r  E:/path to repo/restic_backup --verbose backup ~/Documents</code>
 
 The '-r' flag indicates the repository and is required, the '--verbose' flag is optional but includes additional information related to the backup. A 'snapshot' of the files is stored in the repo. Files can be excluded with the '--exclude' option either explicitly or by pattern matching.
 
@@ -89,6 +89,8 @@ When setting up a new backup the first step is to determine the backup location 
 
 ![Duplicati Settings](https://res.cloudinary.com/bekasa/image/upload/v1655045357/Duplicati_backup_settings_yysxak.webp)
 
+<div class="flex flex-wrap">
+<div class="w-1/2">
 **Standard protocols**
 - Local Disk
 - FTP
@@ -97,7 +99,8 @@ When setting up a new backup the first step is to determine the backup location 
 - S3 Compatible
 - SFTP (SSH)
 - WebDAV
-
+</div>
+<div class="w-1/2">
 **Proprietory**
 - B2 Cloud Storage
 - Dropbox
@@ -118,14 +121,40 @@ When setting up a new backup the first step is to determine the backup location 
 - Sia Decentralized Cloud
 - Tardigrade Decentralized Cloud Storage
 - Tencent COS
+</div>
+</div>
 
-After choosing a protacol if required, additional information is requested such as bucket name, application key etc.
+After choosing a protocol if required, additional information is requested such as bucket name, application key etc.
 
 **Selecting Backup Source**
 
 ![Duplicati Source](https://res.cloudinary.com/bekasa/image/upload/v1655045907/Duplicati_source_qsxiib.webp)
 
+After selecting the backup source directories filters exclusions can be added.
 
+**Schedule Backups**
+
+![Duplicati Schedule](https://res.cloudinary.com/bekasa/image/upload/v1655058114/Duplicati_schedule_ratlrx.webp)
+
+Backups can be automated to reoccur from minutes to years ahead
+
+**General Options**
+
+![Duplicati Options](https://res.cloudinary.com/bekasa/image/upload/v1655058582/Duplicati_options_wedqm7.png)
+
+Options for remote volume size and retention times.
+
+**Restore**
+
+![Duplicati Restore](https://res.cloudinary.com/bekasa/image/upload/v1655059296/Duplicati_restore_dfskap.webp)
+
+Restoration of backups are just as simple. You have the choice of which version to restore from, which files to restore.
+
+**Restore Options**
+
+![Duplicati Restore Options](https://res.cloudinary.com/bekasa/image/upload/v1655059667/Duplicati_restore_options_wbfdij.webp)
+
+Files can be restore to their original location or any other original files can be overwritten and file permissions can be restored.
 
 
 ### References

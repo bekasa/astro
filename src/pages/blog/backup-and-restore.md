@@ -20,7 +20,9 @@ date:   "2022-06-01T11:00:00"
 
 ## Backup and Restore
 
-Developing a rigorously *tested* software backup and restore policy for your home or business is not a wish list item but an absolutely crucial necessity. Should hardware or software fail a well tested policy can save sleepless nights, unnecessary expenditure, and ensure minimum downtime. 
+Developing a rigorously *tested* software backup and restore policy for your home and / or business is not a wish list item but an absolutely crucial necessity. Should hardware or software fail a well tested policy can save sleepless nights, unnecessary expenditure, and ensure minimum downtime. 
+
+You may sigh at the very thought of orchastrating backups but if ever the need arises to restore you will be very pleased you engaged. Even if the financial circumstances are not great the minimum expenditure should be on an external hard disk which have capacities of 3+ TB for around 100€.
 
 Potential threats to your computing system come in both hardware and software forms. Likely sources of hardware failure are hard disks whether HDD or SSD. Software threats from malware, mail attachments, ransomware to name but a few. 
 
@@ -28,9 +30,11 @@ Depending on use, worthy of consideration may be the use of a **NAS** (network a
 
 Relying on just one computer is living on the edge and can make life difficult. Suppose for a moment that there is failure on the only existing machine but parts are not easily available or repair has to be carried out by a non local service centre. Or repair out weighs the cost of a new machine! With just one option getting back up and running could take a few weeks.
 
+
+
 ### Backup Location
 
-Contigous with a general policy is the question of where to put what data. There is no rule against multiple backups  or overlapping data saved. Data of a static nature, for instance valuable pictures could be stored anywhere, locally on USB stick, external hard disk or remotely by cloud storage.
+Contigous with a general policy is the question of where to put what data. There is no rule against multiple backups  or overlapping data saved. The IT industry recommends three backups but at the very least two external hard disk and cloud for example. Data of a static nature and not likely to change, for instance pictures could be stored anywhere, locally on USB stick, external hard disk or remotely by cloud storage.
 
 **Cloud**
 
@@ -48,7 +52,7 @@ Full: A full backup backs up all the files in the back up target ( Whole disk im
 
 Incremental: An incremental backup backs up all files that have changed since the **last backup**.
 
-Differential: A differential backup backs up all files that have changed since the **last full backup**. 
+Differential: A differential backup backs up all files that have changed since the **last full backup** eg Restic, Duplicati. 
 
 ### Restoring Data
 
@@ -110,9 +114,9 @@ Flavours of Linux often incorporate some of the more popular software with initi
 Windows systems are notariously fickle quite apart from earlier apparitions like the '*blue screend of death*'. Linux systems on the other hand have a reputation for solid performance.
 There is a good likelihood that a some stage your Windows system will misbehave in some way.
 
-So, what does Windows 10 have to offer in the way of included backups and restoration? Not much, it is possible to generate a system image though.
+So, what does Windows 11 still does not have good backup system. Not much, it is possible to generate a system image though.
 
-First up before doing anything obtain a copy of Windows.iso or create bootable USB. To do so head over to the Microsoft [download](https://www.microsoft.com/en-us/software-download/windows10?ranMID=24542&ranEAID=kXQk6*ivFEQ&ranSiteID=kXQk6.ivFEQ-h8pRcABL80vrne3eFRPakw&epi=kXQk6.ivFEQ-h8pRcABL80vrne3eFRPakw&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=%28ir__2qlfoofp9kkfqmolkk0sohz31m2xutjtps2ustoa00%29%287593%29%281243925%29%28kXQk6.ivFEQ-h8pRcABL80vrne3eFRPakw%29%28%29&irclickid=_2qlfoofp9kkfqmolkk0sohz31m2xutjtps2ustoa00) page. Download the build tool and double click on the .exe file. A window opens to gather data and generate the requested USB or .iso file. To convert the .iso image to  bootable disk download <a href="https://rufus.ie/en_US/" target='_blank'>rufus</a>. Rufus is not 'installable' as such, simply double click on the .exe file and give permission for the program to run.
+First up before doing anything obtain a copy of Windows.iso or create bootable USB this will help avoid big trouble. To do so head over to the Microsoft [download](https://www.microsoft.com/en-us/software-download/windows10?ranMID=24542&ranEAID=kXQk6*ivFEQ&ranSiteID=kXQk6.ivFEQ-h8pRcABL80vrne3eFRPakw&epi=kXQk6.ivFEQ-h8pRcABL80vrne3eFRPakw&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=%28ir__2qlfoofp9kkfqmolkk0sohz31m2xutjtps2ustoa00%29%287593%29%281243925%29%28kXQk6.ivFEQ-h8pRcABL80vrne3eFRPakw%29%28%29&irclickid=_2qlfoofp9kkfqmolkk0sohz31m2xutjtps2ustoa00) page. Download the build tool and double click on the .exe file. A window opens to gather data and generate the requested USB or .iso file. To convert the .iso image to  bootable disk download <a href="https://rufus.ie/en_US/" target='_blank'>rufus</a>. Rufus is not 'installable' as such, simply double click on the .exe file and give permission for the program to run.
 
 **Rufus set up screen**
 ![rufus screen](https://res.cloudinary.com/bekasa/image/upload/v1624216830/Screenshot_2021-06-20_210928_szsrud.jpg)
@@ -120,7 +124,9 @@ First up before doing anything obtain a copy of Windows.iso or create bootable U
 
 Next, timewarp back to Windows 7 at Settings > Update & Security > Backup > Backup and Restore. There is creating the system image capability which is probably the most reliable between File History or Restore Point options. And the Recovery Drive will only generate a new system sans your personal files.
 
-System images tend to be big so an external hard disk will be required or a solid network location. USB flash drives curry no favour but it is possible to use DVD writer if available.
+System images tend to be big so an external hard disk will be required. USB flash drives curry no favour but it is possible to use DVD writer if available.
+
+A better solution in this instnce would be Macrium Reflect 8 (see below)
 
 
 ## MAC
@@ -132,6 +138,12 @@ It is possible to use external (compatible) drive, USB stick, compatible NAS, an
 Restoration is again made very easy, choices are individual files, multiple files or entire system.
 
 For those looking for more specific backup, rsync (written for Unix systems and incorporated in Linux distributions) is already installed and grsync is available using brew.
+
+**Managing Backups**
+
+It is always good policy to backup files frequently but doing it manually can be time consuming and boring. And options like OneDrive don't allow much flexibility unless the data is kept within one the the three folders copied (Desktop, Pictures, Documents).
+
+Backups can be organised by specialised software <a href="/blog/restic-and-duplicati" >Restic & Duplicati</a> where backup targets can be chosen from local to multiple online storage services. Backup intervals and restore location can be set or changed as required.
 
 
 **References**
@@ -150,7 +162,7 @@ For those looking for more specific backup, rsync (written for Unix systems and 
 |Provider |&nbsp;&nbsp; | Comment|
 |---------| ---  |  ---  |
 |<a href="https://www.microsoft.com/en-gb/microsoft-365/onedrive/online-cloud-storage" target='_blank'>OneDrive</a>|&nbsp;&nbsp;  | Microsoft does offer OneDrive with a 5 GB free tier but space requirements for a system image may require further space for purchase at $19.99 p/a for 100 GB storage.|
-|<a href="https://www.macrium.com/reflectfree?mo#" target='_blank'>Reflect8</a>|&nbsp;&nbsp;  | Macrium Reflect 7 billed as the best no-cost backup restore solution on the market.|
+|<a href="https://www.macrium.com/reflectfree?mo#" target='_blank'>Reflect8</a>|&nbsp;&nbsp;  | Macrium Reflect 8 billed as the best no-cost backup restore solution on the market.|
 |<a href="https://www.easeus.com/backup-software/tb-free.html" target='_blank'>EaseUS</a>|&nbsp;&nbsp;  | No cost starter for full/differential/incremental backup and restore upgrade available at $19.95|
 <a href="https://www.ubackup.com/free-backup-software.html" target='_blank'>AOMEI</a>|&nbsp;&nbsp;  | Free to download and use includes backup, recovery, clone, and sync functions.|
 |<a href="https://www.paragon-software.com/free/br-free/" target='_blank'>PARAGON</a>|&nbsp;&nbsp;  | Free to download and use includes backup scheduling and selected recovery.|
