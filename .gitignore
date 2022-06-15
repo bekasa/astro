@@ -28,4 +28,4 @@ pnpm-debug.log*
 test.js
 
 # Svelte integration test page
-/src/pages/contact-svelte.astro
+src/pages/contact-svelte.astro
