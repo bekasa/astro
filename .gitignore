@@ -20,3 +20,9 @@ pnpm-debug.log*
 .DS_Store
 
 #git config --global credential.helper 'store --file ~/.my-credentials' for setting github personal access tokens
+
+# Local Netlify folder
+.netlify
+
+# Fauna connectivity test file
+test.js
