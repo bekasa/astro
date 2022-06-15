@@ -26,3 +26,6 @@ pnpm-debug.log*
 
 # Fauna connectivity test file
 test.js
+
+# Svelte integration test page
+/src/pages/contact-svelte.astro
