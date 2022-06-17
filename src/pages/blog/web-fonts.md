@@ -37,7 +37,7 @@ Since all custom fonts have to be downloaded to the browser before they can used
 
 At the time if writing there are discussions about how best to load fonts, whether for instance to self host the font on the server and with a mixture of instructions as to how and when during the loading cycle the best performance can be achieved.
 
-Really it depends on how the font is acquired. If the font is available from Google probably better to use that, Google provides unbeatable infrastructure and highly optimized and limited character fonts. Self hosting these fonts will almost certainly take at least twice as long and probably much longer ti install on a page.
+Really it depends on how the font is acquired. If the font is available from Google probably better to use that, Google provides unbeatable infrastructure and highly optimized and limited character fonts. Self hosting these fonts will almost certainly take at least twice as long and probably much longer to install on a page.
 
 ### Variable Fonts
 The introduction of variable fonts allows the greatest degree of creativity for the web designer. Instead of using different files for font weights and styles, variable font files combine all possible style permutations in one or two files.

@@ -19,7 +19,7 @@ date: "2016-10-20T14:30"
 
 It is a very practical and cost effective method providing an alternative to mobile specific sites, sub-domains or applications.
 
-The explosion in the use of mobile devices has fueled development in fact the necessity of this kind of solution. Mobile devices are far exceeding laptops and desktops as viewing mediums.
+The explosion in the use of mobile devices has fuelled development in fact the necessity of this kind of solution. Mobile devices are far exceeding laptops and desktops as viewing mediums.
 
 ### The Responsive Problem
 
@@ -30,7 +30,7 @@ Is it possible then to squeeze a laptop screen into a mobile phone screen? Not w
 ### History
 
 The identification of device aware styles dates back as early as 1998 with style sheet  recognition of "handheld" media in the HTML 4 specification <a href="http://www.w3.org/TR/1998/REC-html40-19980424/types.html#h-6.13" target="_blank">html4 spec</a>.
-This "handheld" initiative really died when browser implementations favored "screen" and left out "handheld" definition altogether.
+This "handheld" initiative really died when browser implementations favoured "screen" and left out "handheld" definition altogether.
 
 And so the confusion on how to best implement mobile browsing continued for nearly a decade.
 
@@ -49,7 +49,7 @@ RWD is easily implemented today in no small part due to standards adherence by m
 
 These frameworks provide ready built grid systems which operate to effectively scale and manipulate the layout. Depending on how they are implemented, grid contained elements scale automatically to screen widths. If required columns can be forced to slide downwards on small screen devices so that it is added to the main column. The viewer sees an extended main column with the right column content tacked on at the bottom.
 
-Images contained in a grid, provided they do not have fixed dimensions, exhibit the same behavior, automatic scaling. Where necessary image versions can be created for mobile, tablet and desktop. Image display is dependent on screen resolution and size.
+Images contained in a grid, provided they do not have fixed dimensions, exhibit the same behaviour, automatic scaling. Where necessary image versions can be created for mobile, tablet and desktop. Image display is dependent on screen resolution and size.
 
 ### Conclusion
 

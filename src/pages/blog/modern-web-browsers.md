@@ -34,7 +34,7 @@ That may lead you to suppose that all browsers do more or less the same thing in
 Not surprisingly, privacy has become an even greater issue than ever, nearly everyone it seems wants to track your online actions and movements. And just who is everyone? Remember **PRISM**, here is a very short list: Google, Yahoo, Microsoft, Apple, Skype, facebook see this [The Guardian](https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data).
 Why are these companies so interested? Money is one obvious reason, all these companies make money out of your data. Facebook and other social media are not free, you pay with your personal information.
 
-Determining behavioral habits and trends is extremely useful and powerful marketing information and then so are the security implications.
+Determining behavioural habits and trends is extremely useful and powerful marketing information and then so are the security implications.
 
 
 > Intelligence imparts power; power which may be used to withstand a threat, or to apply one; to avert an ill, to bestow a benefit – or to exploit.
@@ -112,7 +112,7 @@ As novel as the 'Brave Payments' are, the privacy inclusions are really not that
 
 <h3> Internet Explorer 11</h3>
 
-The most criticized browser in history for it's numerous faults including security flaws and non-adherence to web standards. It has had a checkered history but is probably the oldest browser and is now at version 11 but is the best incarnation yet.
+The most criticized browser in history for it's numerous faults including security flaws and non-adherence to web standards. It has had a chequered history but is probably the oldest browser and is now at version 11 but is the best incarnation yet.
 Microsoft is not supporting earlier versions so die hard users should upgrade to the latest version.
 
 It looks just the same as previous versions in 9 and 10. The changes are under the hood with faster loading pages. Also incorporating a prediction process which allows background loading of predicted links. If followed the linked page displays instantly.

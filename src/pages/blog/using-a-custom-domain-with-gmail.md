@@ -49,7 +49,7 @@ Thereafter there are four options, leave a copy of the message on the server, us
 
 ![email details](https://res.cloudinary.com/bekasa/image/upload/v1484841494/gmail-3-min_x5zowf.png)
 
-These are all self explanatory but basically. If you are using another mail reading program as well leave copy mails on the server. Always a good idea to use a secure connection. And always handy to have incoming mails labeled. If archiving is chosen mails will skip the inbox and be allocated to the appropriate folder.
+These are all self explanatory but basically. If you are using another mail reading program as well leave copy mails on the server. Always a good idea to use a secure connection. And always handy to have incoming mails labelled. If archiving is chosen mails will skip the inbox and be allocated to the appropriate folder.
 
 Click *'Add Account'* when complete.
 

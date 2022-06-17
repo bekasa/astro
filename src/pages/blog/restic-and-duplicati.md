@@ -17,7 +17,7 @@ panel_title: "Restic & Duplicati"
 date:   "2022-06-10T11:00:00" 
 ---
 
-Two well known open source programs for backing up and restoring files. Both work with the command line, multiple operating systems including Windows, Linux and Mac. The big differnce between them is that Duplicati has a web interface which can be viewed using a browser at port 8200. So, for those not comfortable with the command line (terminal) then Duplicati is a good alternative. Both provide for incremental and encrypted backups.
+Two well known open source programs for backing up and restoring files. Both work with the command line, multiple operating systems including Windows, Linux and Mac. The big difference between them is that Duplicati has a web interface which can be viewed using a browser at port 8200. So, for those not comfortable with the command line (terminal) then Duplicati is a good alternative. Both provide for incremental and encrypted backups.
 
 ### Installation
 
@@ -50,7 +50,7 @@ Local storage example to drive E on Windows creating a repository <code>init rep
 
 It is required to enter a password, a warning is given not to lose or forget , otherwise files stored in the repository will be irretrievable.
 
-Backing up Docuents folder the repository <code>restic -r  E:/path to repo/restic_backup --verbose backup ~/Documents</code>
+Backing up Documents folder the repository <code>restic -r  E:/path to repo/restic_backup --verbose backup ~/Documents</code>
 
 The '-r' flag indicates the repository and is required, the '--verbose' flag is optional but includes additional information related to the backup. A 'snapshot' of the files is stored in the repo. Files can be excluded with the '--exclude' option either explicitly or by pattern matching.
 
@@ -85,7 +85,7 @@ Removal policy can be organised with the '--keep-last n' flag, where n is the nu
 Duplicati with the web interface is very easy to use and bound to find quick acceptance with GUI fans.
 ![Diuplicati](https://res.cloudinary.com/bekasa/image/upload/v1655045341/Duplicati_900_pz7ldr.webp)
 
-When setting up a new backup the first step is to determine the backup location and the choice is between the following standard option and the following proprietory ones.
+When setting up a new backup the first step is to determine the backup location and the choice is between the following standard option and the following proprietary ones.
 
 ![Duplicati Settings](https://res.cloudinary.com/bekasa/image/upload/v1655045357/Duplicati_backup_settings_yysxak.webp)
 
@@ -101,7 +101,7 @@ When setting up a new backup the first step is to determine the backup location 
 - WebDAV
 </div>
 <div class="w-1/2">
-**Proprietory**
+**Proprietary**
 - B2 Cloud Storage
 - Dropbox
 - Google Cloud Storage

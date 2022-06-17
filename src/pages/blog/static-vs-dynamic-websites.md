@@ -19,7 +19,7 @@ date: "2016-10-06T11:00:00"
 draft: false
 ---
 
-Back to the future, anyone at first sight can be forgiven for thinking that website generation is going backwards with static website generators becoming more and more popular. This is no web masters' whimsy, numerous big companies and institutions are favoring the static route over currently more popular dynamic database driven options. 
+Back to the future, anyone at first sight can be forgiven for thinking that website generation is going backwards with static website generators becoming more and more popular. This is no web masters' whimsy, numerous big companies and institutions are favouring the static route over currently more popular dynamic database driven options. 
 
 Size is not a restriction, large websites have been built using site generators example healthcare.gov. Even Google has adopted some static pages for some products, so are we returning to the 1990's, the beginning of the web?
 

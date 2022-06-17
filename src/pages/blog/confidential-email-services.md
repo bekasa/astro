@@ -46,7 +46,7 @@ The biggest general privacy upgrade in recent times has been the adoption of SSL
 
 ### Email and Document Encryption
 
-The most popular method of encrypting documents is by OpenPGP standard and there are several flavors of implementation. The process involves the generation of paired keys which are mathematically related. Key generation is specific to one email address.
+The most popular method of encrypting documents is by OpenPGP standard and there are several flavours of implementation. The process involves the generation of paired keys which are mathematically related. Key generation is specific to one email address.
 
 The public key can be made widely available by using keyring servers or even sending along as an attachment with an email. Decryption is then undertaken by the recipient with the private key. 
 
@@ -74,13 +74,13 @@ The recipient receives notification that a confidential message has been sent to
 
 <img src="https://res.cloudinary.com/bekasa/image/upload/v1549815171/mailfence_c_l6pijs.png" alt="mailfence"/>
 
-Probably the most extensive service listed here including both paid and free tiers. Paid options begin at a ver reasonable 2.5 &euro; / month. Services increase dramatically with email storage rising to 5 GB, support included, Imap, POP, SMTP's available along with custom domains.
+Probably the most extensive service listed here including both paid and free tiers. Paid options begin at a very reasonable 2.5 &euro; / month. Services increase dramatically with email storage rising to 5 GB, support included, Imap, POP, SMTP's available along with custom domains.
 
 The free tier includes options to upload, store and manage  PGP keys. Either outward bound mail can be encrypted by password or key. In the case of password protection, notification of the email is sent. After entering the password, the encrypted mail is displayed along with the option to reply.
 
 Emails can be set to destruct from one week upwards or never.
 
-Ths document store allows uploading and organisation of documents.
+This document store allows uploading and organisation of documents.
 
 Calendar events and notifications are available.
 

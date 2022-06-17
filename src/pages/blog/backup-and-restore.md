@@ -22,11 +22,11 @@ date:   "2022-06-01T11:00:00"
 
 Developing a rigorously *tested* software backup and restore policy for your home and / or business is not a wish list item but an absolutely crucial necessity. Should hardware or software fail a well tested policy can save sleepless nights, unnecessary expenditure, and ensure minimum downtime. 
 
-You may sigh at the very thought of orchastrating backups but if ever the need arises to restore you will be very pleased you engaged. Even if the financial circumstances are not great the minimum expenditure should be on an external hard disk which have capacities of 3+ TB for around 100€.
+You may sigh at the very thought of orchestrating backups but if ever the need arises to restore you will be very pleased you engaged. Even if the financial circumstances are not great the minimum expenditure should be on an external hard disk which have capacities of 3+ TB for around 100€.
 
 Potential threats to your computing system come in both hardware and software forms. Likely sources of hardware failure are hard disks whether HDD or SSD. Software threats from malware, mail attachments, ransomware to name but a few. 
 
-Depending on use, worthy of consideration may be the use of a **NAS** (network attached storage). A NAS is a local network connected collection of hard disks (a private cloud). The great advantage is that storege is completely under owner control. Prices differ according to capacity and capability.
+Depending on use, worthy of consideration may be the use of a **NAS** (network attached storage). A NAS is a local network connected collection of hard disks (a private cloud). The great advantage is that storage is completely under owner control. Prices differ according to capacity and capability.
 
 Relying on just one computer is living on the edge and can make life difficult. Suppose for a moment that there is failure on the only existing machine but parts are not easily available or repair has to be carried out by a non local service centre. Or repair out weighs the cost of a new machine! With just one option getting back up and running could take a few weeks.
 
@@ -34,7 +34,7 @@ Relying on just one computer is living on the edge and can make life difficult. 
 
 ### Backup Location
 
-Contigous with a general policy is the question of where to put what data. There is no rule against multiple backups  or overlapping data saved. The IT industry recommends three backups but at the very least two external hard disk and cloud for example. Data of a static nature and not likely to change, for instance pictures could be stored anywhere, locally on USB stick, external hard disk or remotely by cloud storage.
+Contiguous with a general policy is the question of where to put what data. There is no rule against multiple backups  or overlapping data saved. The IT industry recommends three backups but at the very least two external hard disk and cloud for example. Data of a static nature and not likely to change, for instance pictures could be stored anywhere, locally on USB stick, external hard disk or remotely by cloud storage.
 
 **Cloud**
 
@@ -42,7 +42,7 @@ Cloud storage depends on an a reliable internet connection and an equally reliab
 
 **Local**
 
-Using local storage is going to be much cheaper in the long term with large amounts of data and you have complete control of the storate medium. 
+Using local storage is going to be much cheaper in the long term with large amounts of data and you have complete control of the storage medium. 
 
 **Types of Backup**
 
@@ -111,7 +111,7 @@ Flavours of Linux often incorporate some of the more popular software with initi
 
 ## Windows 10 /11
 
-Windows systems are notariously fickle quite apart from earlier apparitions like the '*blue screend of death*'. Linux systems on the other hand have a reputation for solid performance.
+Windows systems are notoriously fickle quite apart from earlier apparitions like the '*blue screen of death*'. Linux systems on the other hand have a reputation for solid performance.
 There is a good likelihood that a some stage your Windows system will misbehave in some way.
 
 So, what does Windows 11 still does not have good backup system. Not much, it is possible to generate a system image though.
@@ -126,12 +126,12 @@ Next, timewarp back to Windows 7 at Settings > Update & Security > Backup > Back
 
 System images tend to be big so an external hard disk will be required. USB flash drives curry no favour but it is possible to use DVD writer if available.
 
-A better solution in this instnce would be Macrium Reflect 8 (see below)
+A better solution in this instance would be Macrium Reflect 8 (see below)
 
 
 ## MAC
 
-Whether you are an Apple fan or not the clarity, simplicity and ease of use of 'Time Machine' has to be admired. Every Mac arrives with Time Machine installed and available for use striaght out of the box. The decision that has to be made is where to place backups HDD, SDD, USB, Cloud etc much the same as other operating systems.
+Whether you are an Apple fan or not the clarity, simplicity and ease of use of 'Time Machine' has to be admired. Every Mac arrives with Time Machine installed and available for use straight out of the box. The decision that has to be made is where to place backups HDD, SDD, USB, Cloud etc much the same as other operating systems.
 
 It is possible to use external (compatible) drive, USB stick, compatible NAS, another Mac computer or iDrive. If the external drive requires formatting the process is simple, note as with any format options all data will be lost.
 
@@ -154,7 +154,7 @@ Backups can be organised by specialised software <a href="/blog/restic-and-dupli
 |---------| ---  |  ---  |
 |<a href="https://icedrive.net/" target='_blank'>Icedrive</a>|&nbsp;&nbsp; | 10GB free of charge, clean interface, encryption available, good download speeds|
 |<a href="https://mega.io" target='_blank'>MEGA</a>|&nbsp;&nbsp; |20GB+ free, good interface, encrypted, catastrophic download speeds which can drop to 0 B/s|
-|<a href="https://drive.google.com" target='_blank'>GoogleDrive</a>|&nbsp;&nbsp; | 15GB capcaity shared with all other services per Google account|
+|<a href="https://drive.google.com" target='_blank'>GoogleDrive</a>|&nbsp;&nbsp; | 15GB capacity shared with all other services per Google account|
 |<a href="https://www.backblaze.com/"target='_blank'  >BackblazeB2</a>|&nbsp;&nbsp; |First 10GB of storage free thereafter charges apply, can be integrated with backup and restore software eg restic, Duplicati.
 
 <u>**Windows Related**</u>
@@ -166,7 +166,7 @@ Backups can be organised by specialised software <a href="/blog/restic-and-dupli
 |<a href="https://www.easeus.com/backup-software/tb-free.html" target='_blank'>EaseUS</a>|&nbsp;&nbsp;  | No cost starter for full/differential/incremental backup and restore upgrade available at $19.95|
 <a href="https://www.ubackup.com/free-backup-software.html" target='_blank'>AOMEI</a>|&nbsp;&nbsp;  | Free to download and use includes backup, recovery, clone, and sync functions.|
 |<a href="https://www.paragon-software.com/free/br-free/" target='_blank'>PARAGON</a>|&nbsp;&nbsp;  | Free to download and use includes backup scheduling and selected recovery.|
-|<a href="https://www.acronis.com/en-us/products/true-image/" target='_blank'>Acronis</a>|&nbsp;&nbsp;  | Subscription based backup, restore, malware protection in three flavours 'Essencial' @ $49.99 pa, 'Advanced' @ $89.99 pa, 'Premium' @ $124.99 pa.|
+|<a href="https://www.acronis.com/en-us/products/true-image/" target='_blank'>Acronis</a>|&nbsp;&nbsp;  | Subscription based backup, restore, malware protection in three flavours 'Essential' @ $49.99 pa, 'Advanced' @ $89.99 pa, 'Premium' @ $124.99 pa.|
 
 
 <u>**Mac Related**</u>
