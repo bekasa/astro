@@ -4,7 +4,7 @@ url : '/blog/backup-and-restore'
 tags: blog
 page Title: "Computer Data Backup and Recovery Strategies"
 article_title: "Avoid Disaster with Computer Data Backup and Recovery Strategy"
-description: "Data Backups and recovery plan is essential to avoid permanent loss of data, whether by catastrofic hardware failure or device loss."
+description: "Data Backups and recovery plan is essential to avoid permanent loss of data, whether by catastrophic hardware failure or device loss."
 categories: "general"
 lead: "Backup and Restore"
 pa_jpg: ""
